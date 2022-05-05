@@ -13,6 +13,7 @@ fetchGQL({
   query: IntrospectionDocument,
   variables: {},
 })
+  // field can also be a specific query e.g. `Query.users_by_pk`
   .then((res) => genQuery(res.data.__schema.types, 'SpaceX', 'Query', 1))
   .then(console.log)
 ```
