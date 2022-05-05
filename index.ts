@@ -83,7 +83,7 @@ export default function genQuery(types: SchemaTypes, documentName: string, name:
 
       case 'UNION': {
         const expanded = expandType(name, depth, true);
-        if (expanded) return null;
+        if (!expanded) return null;
         return [field.name, ' {\n', expanded, `\n${padding(depth)}}`].join('');
       }
 
