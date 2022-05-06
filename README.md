@@ -1,5 +1,5 @@
 # GraphQL-QueryGen
-Recursively generates an GraphQL query with every possible field to an arbitrary depth.
+Recursively generates a GraphQL query with every possible field to an arbitrary depth.
 
 It can be a pain to exhaustively test GraphQL fields, and subfields many levels deep.
 This tool will recursively walk your GraphQL schema and generate a deeply nested query along with a variables object which you can fill in with the appropriate type.
